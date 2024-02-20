@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  /* color: #2d2e32; */
+}
+
+header {
+  position: fixed;
+  background-color: #fff;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 9%;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.16);
+}
+body {
+  background-color: white;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  color: blue;
+}
+.nav_list {
+  display: flex;
+}
+.nav_list a {
+  color: black;
+  margin-left: 40px;
+  display: inline-block;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.55s ease;
+  transition: 0.3s;
+}
+.nav_list a:hover {
+  color: #0ef;
+  border-bottom: 2px solid #0ef;
+}
+#menu-icons {
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+.home {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #f9f9f9;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 70px 10% 0;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+.my_pict {
+  animation: morph 8s ease-in-out infinite;
+  background-image: url(picture.jpg.jpeg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  height: 25rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+  width: 25rem;
+  -webkit-animation: morph 8s ease-in-out infinite;
+  margin-right: 35px;
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+.h3one {
+  color: #2d2e32;
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.p_one {
+  color: #555;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.home_content {
+  padding-bottom: 150px;
+}
+.skills {
+  align-items: center;
+  bottom: 0;
+  color: #767676;
+  display: flex;
+  font-size: 1.7rem;
+  left: 0;
+  position: absolute;
+  padding-left: 200px;
+}
+.skills p {
+  border-right: 2px solid rgba(45, 46, 50, 0.5);
+  color: #2d2e32;
+  font-family: Mulish, sans-serif;
+  font-weight: 600;
+  margin-right: 7rem;
+  padding-right: 2rem;
+}
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  list-style: none;
+}
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.skills ul li {
+  cursor: pointer;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.skills ul li img:hover {
+  width: 95%;
+}
+.pict2 img {
+  border-radius: 1.7rem;
+  height: 30rem;
+  width: 30rem;
+  margin-left: 150px;
+}
+.text-side h3 {
+  color: #147efb;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+h3 {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.text-side p {
+  color: #767676;
+  font-family: Mulish, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.text-side {
+  text-align: center;
+  width: 700px;
+}
+section {
+  display: block;
+}
+.About {
+  background-color: #fff;
+  padding: 10rem 0;
+}
+.About {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+.text-side h4 {
+  color: #2d2e32;
+  font-family: Poppins, sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+.pict2:hover {
+  filter: grayscale(40%);
+}
+button {
+  appearance: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  text-align: center;
+  position: absolute;
+  margin-left: 1070px;
+  margin-top: 50px;
+}
+.button_portfolio {
+  background-color: #fff;
+  border: 3px solid black;
+  border-radius: 8px;
+  padding: 15px 20px;
+}
+.button_portfolio:hover {
+  background-color: black;
+  color: #fff;
+  animation: 0.39s;
+}
+.headext h2 {
+  color: #147efb;
+  font-size: 2.5rem;
+  position: absolute;
+  text-align: center;
+  margin-left: 40%;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.circleOne {
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px hsla(0, 0%, 100%, 0.9);
+  display: flex;
+  height: 320px;
+  justify-content: center;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  width: 350px;
+}
+.content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+.content img {
+  width: 200px;
+  height: 100px;
+}
+img {
+  pointer-events: none;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.content a {
+  background-color: whitesmoke;
+  border-radius: 5rem;
+  border: 2px solid black;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 80px;
+  height: 80px;
+}
+.app__flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.img_eye {
+  width: 30px;
+  height: 30px;
+}
+.content a:hover {
+  background-color: #0ef;
+}
+.circleTwo .content img {
+  width: 200px;
+  height: 100px;
+}
+.app__work-portfolio {
+  align-items: start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+.Certificats {
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+.project {
+  background-color: #f9f9f9;
+  padding: 15rem 0;
+}
+.new-projects {
+  text-align: center;
+  color: #2d2e32;
+  padding: 15rem 0;
+}
+h1 {
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
